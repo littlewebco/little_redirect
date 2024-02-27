@@ -26,21 +26,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // ON DOM load, redirect the user to their correct login page URL:PORT
-
-
-document.addEventListener('DOMContentLoaded', function() {
+window.onload = function() {
     const currentDomain = window.location.hostname;
     const domainElement = document.getElementById('currentDomain');
     const redirectURL = `https://${currentDomain}:2083`;
 
-    // Display the current domain in the hero area
+    // Display the current domain
     domainElement.textContent = currentDomain;
 
-    // Set a 5-second delay before redirecting
+    // Set a 3-second delay before redirecting
     setTimeout(function() {
         window.location.replace(redirectURL);
-    }, 5000); // 5000 milliseconds = 5 seconds
-});
+    }, 3000); // 3000 milliseconds = 3 seconds
+};
 
 // End Redirect
 
