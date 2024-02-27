@@ -24,9 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
     loadTemplatePart("template-part/footer.html", "footer-container");
 });
 
+
+// Read the current domain to print
 window.onload = function() {
     const currentDomain = window.location.hostname;
-    document.getElementById('currentDomain').textContent = currentDomain;
+    const refreshMeta = document.getElementById('refreshMeta');
+
+    // Add port 2083 to the current domain and update the content attribute
+    const redirectURL = `https://${currentDomain}:2083`;
+    refreshMeta.content = `5; url=${redirectURL}`;
 };
 
 function loadTemplatePart(path, containerId, callback) {
