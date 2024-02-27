@@ -25,15 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Read the current domain to print
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
     const currentDomain = window.location.hostname;
     const refreshMeta = document.getElementById('refreshMeta');
 
     // Add port 2083 to the current domain and update the content attribute
     const redirectURL = `https://${currentDomain}:2083`;
     refreshMeta.content = `5; url=${redirectURL}`;
-};
+});
 
 function loadTemplatePart(path, containerId, callback) {
     fetch(path)
