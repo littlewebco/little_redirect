@@ -33,9 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const domainElement = document.getElementById('currentDomain');
     const redirectURL = `https://${currentDomain}:2083`;
 
-    // Display the current domain for 5 seconds before redirecting
+    // Display the current domain in the hero area
     domainElement.textContent = currentDomain;
-    
+
+    // Set a 5-second delay before redirecting
     setTimeout(function() {
         window.location.replace(redirectURL);
     }, 5000); // 5000 milliseconds = 5 seconds
