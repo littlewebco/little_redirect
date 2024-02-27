@@ -24,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
     loadTemplatePart("template-part/footer.html", "footer-container");
 });
 
+window.onload = function() {
+    const currentDomain = window.location.hostname;
+    document.getElementById('currentDomain').textContent = currentDomain;
+};
+
 function loadTemplatePart(path, containerId, callback) {
     fetch(path)
         .then(response => {
