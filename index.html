@@ -1,172 +1,62 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-        <meta name="description" content="secure your domain now" />
-        <meta property="og:site_name" content="Little Cloud" />
-        <meta property="og:url" content="https://little.cloud" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="domains" />
-        <title>Little Cloud | Domains</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="description" content="Login to your hosting now" />
+    <meta property="og:site_name" content="Little Cloud" />
+    <meta property="og:url" content="https://cu.little.cloud" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Little Cloud | Cumulus" />
+    <meta name="author" content="https://little.cloud" />
+    <title>Little Cloud | Cumulus Login</title>
 
-        <!-- favicon -->
-        <link rel="shortcut icon" href="image/favicon/favicon.png" type="image/x-icon" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/favicon/favicon.png" type="image/x-icon" />
 
-        <!-- Bootstrap , fonts & icons  -->
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <link rel="stylesheet" href="fonts/sofia-pro/typographie.css" />
-        <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css" />
+    <!-- Bootstrap , fonts & icons  -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="fonts/sofia-pro/typographie.css" />
+    <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css" />
+    <script src="plugins/lordicon/lord-icon-2.1.0.min.js"></script>
 
-        <!-- Plugin'stylesheets  -->
-        <link rel="stylesheet" href="plugins/slick/slick.min.css" />
-        <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
-        <link rel="stylesheet" href="plugins/aos/aos.min.css" />
-        <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css" />
+    <!-- Plugin'stylesheets  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.css" />
+    <link rel="stylesheet" href="plugins/slick/slick.min.css" />
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="plugins/aos/aos.min.css" />
+    <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css" />
 
-        <!-- Vendor stylesheets  -->
-        <link rel="stylesheet" href="css/main.css" />
+    <!-- Vendor stylesheets  -->
+    <link rel="stylesheet" href="css/main.css" />
 
-        <!-- you can add your custom stylesheet in this file -->
-        <link rel="stylesheet" href="css/custom.css" />
-        <script src="js/main.js"></script>
-    </head>
+    <!-- you can add your custom stylesheet in this file -->
+  
+    <script src="js/main.js"></script>
+    
+</head>
 
-    <body>
-        <!-- DELETE THIS IF YOU WANT TO REMOVE PAGELOADER ANIMATION -->
-        <div class="preloader">
-            <div class="preloader-container">
-                <div class="lds-ring">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <span class="coodiv-text-10">loading...</span>
-            </div>
-        </div>
-        <!-- DELETE THIS IF YOU WANT TO REMOVE PAGELOADER ANIMATION -->
-
-        <!-- start site-wrapper -->
-        <div class="site-wrapper overflow-hidden">
-            <!-- Header Area -->
-            <header class="site-header header-with-right-menu light-mode-texts site-header--absolute fixed-header-layout light-color-header">
-                <div class="container-fluid pr-lg-9 pl-lg-9">
-                    <nav class="navbar site-navbar offcanvas-active navbar-expand-lg px-0">
-                        <!-- Brand Logo-->
-                        <div class="brand-logo mr-8">
-                            <a href="index.html">
-                                <!-- light version logo (logo must be black)-->
-                                <img src="image/logo-main-black.png" alt="" class="light-version-logo" />
-                                <!-- Dark version logo (logo must be White)-->
-                                <img src="image/logo-main-white.png" alt="" class="dark-version-logo" />
-                            </a>
-                        </div>
-
-                        <!-- START language area header -->
-						<div id="languagesystem" class="header-lang dropdown show position-static coodiv-z-index-1">
-						<a class="coodiv-text-10 btn-header-lang position-relative" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="feather icon-globe mr-2"></i><span data-i18n="[html]systems.langname"></span> </a>
-						<div id="languagesystem-slector" class="header-lang-container dropdown-menu px-8 py-7 px-lg-15 py-lg-15 overflow-scroll-y" aria-labelledby="dropdownMenuLink"></div>
-						</div>
-                        <!-- END language area header -->
-
-                        <!-- START header main navbar -->
-                        <div class="collapse navbar-collapse" id="mobile-menu">
-                            <div class="navbar-nav-wrapper">
-                                <ul id="header-navbar-links" class="navbar-nav main-menu"></ul><!-- Main header navbar -->
-                            </div>
-                        </div>
-						<!-- END header main navbar -->
-						
-						
-					<!-- START header left buttons -->
-                        <div class="header-btn ml-auto ml-lg-10 mr-5 d-none d-xs-block position-relative">
-                            <a data-i18n="Login" class="btn btn-warning coodiv-text-9" href="https://portal.littlecloud.co/index.php?rp=/login">Login</a>
-                            <a class="headerphone-number" href="https://portal.littlecloud.co/register.php">or signup here</a>
-                        </div>
-                        <!-- START header left buttons -->
-						
-                        <!-- Mobile Menu Buttons-->
-                        <button class="navbar-toggler btn-close-off-canvas hamburger-icon border-0" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="hamburger hamburger--squeeze js-hamburger">
-                                <span class="hamburger-box">
-                                <i class="feather icon-menu"></i>
-								<i class="feather icon-x"></i>
-                                </span>
-                            </span>
-                        </button>
-                        <!--/ END Mobile Menu Buttons -->
-                    </nav>
-                </div>
-            </header>
-            <!-- navbar-dark -->
-
-            <!-- Hero Area -->
-            <div class="hero-area-coodiv position-relative white-bg-web3 light-mode-texts">
-               <div class="">
-                    
-                    
-                    <span class="header-earth"></span>
-
-                    
-                </div>
-
-                <div class="container">
-                    <div class="row justify-content-center align-items-center pb-30 position-relative coodiv-z-index-2">
-                        <div class="col-11 col-md-12 col-lg-9 order-lg-1" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
-                            <div class="hero-content mt-11 mt-lg-0">
-                                
-                                <h1 class="title coodiv-text-5 mb-5 text-center">Find a domain as Unique as You.</h1>
-                                <p class="coodiv-text-9 mb-11 text-center">
-                                    Search for your perfect domain name today
-                                </p>
-                                <!-- CREATE DOMAIN SEARCH BOX AND SEARCH DOMAIN https://app.little.cloud/cart.php?a=add&domain=register-->
-                                
-                  
-                                <form class="domain-search-form mb-13" action="https://app.little.cloud/cart.php?a=add&domain=register" method="POST">
-                                    <div class="domain-search position-relative">
-                                        
-                                        <input class="domain-search-input-header pl-6" type="text" name="query" data-role="input-typewrite" required="" aria-label="Register a Domain Name" placeholder="domain.info" />
-                                        <button type="submit" class="btn btn-warning domain-search-button-header position-absolute" role="button" aria-label="Search Domain Name">Search</button>
-                                
-                                    </div>
-                                    
-                                </form>
-                                
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-<!--\/\/ Leave Footer Here \/\/\/-->
-<div id="footer-container"></div>
-<!-- ^^^^^^^^^ -->
-
-<!-- Vendor Scripts -->
-<script src="js/vendor.min.js"></script>
-<!-- Plugin's Scripts -->
-<script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-<script src="plugins/nice-select/jquery.nice-select.min.js"></script>
-<script src="plugins/aos/aos.min.js"></script>
-<script src="plugins/slick/slick.min.js"></script>
-<script src="plugins/typed/typed.min.js"></script>
-<script src="plugins/waypoints/jquery.waypoints.min.js"></script>
-
-<script src="plugins/particles/particles-code.js"></script>
-<script src="plugins/particles/particles.js"></script>
-<script src="plugins/parallax/parallax.js"></script>
-
-<!-- Translate Scripts -->
-<script src="plugins/i18next/i18next.min.js"></script>
-<script src="plugins/i18next/i18nextXHRBackend.min.js"></script>
-<script src="plugins/i18next/jquery-i18next.min.js"></script>
-
-<!-- Activation Script -->
-<script src="js/custom.js"></script>
+<!-- Body Structure of Page -->
+<body>
+    
+        <div id="header-container"></div>
+         <!-- START site wrapper -->
+<div class="site-wrapper overflow-hidden">
+    <!--\/\/ Leave Header Here \/\/\/-->
+    
+    <!-- ^^^^^^^^^ -->
+    <!-- MAIN CONTENT START-->
+    <div id="hero-section-container"></div>
+    <div id="hero-section-features-container"></div>
+    <div id="support-package"></div>
+    <!-- MAIN CONTENT END-->
+    <!--\/\/ Leave Footer Here \/\/\/-->
+    <div id="footer-container"></div>
+    <!-- ^^^^^^^^^ -->
+</div>
+ <!-- END site wrapper -->
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
 </body>
 </html>
-<!--footer finish-->
