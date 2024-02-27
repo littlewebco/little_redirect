@@ -25,14 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// ON DOM load, redirect the user to their correct login page URL:PORT
+
 document.addEventListener('DOMContentLoaded', function() {
     const currentDomain = window.location.hostname;
-    const refreshMeta = document.getElementById('refreshMeta');
-
-    // Add port 2083 to the current domain and update the content attribute
     const redirectURL = `https://${currentDomain}:2083`;
-    refreshMeta.content = `5; url=${redirectURL}`;
+    // Set a 5-second delay before redirection
+    setTimeout(function() {
+        window.location.replace(redirectURL);
+    }, 3000); // 3000 milliseconds = 3 seconds
 });
+
 
 function loadTemplatePart(path, containerId, callback) {
     fetch(path)
