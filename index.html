@@ -11,51 +11,263 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Little Hosting" />
     <meta name="author" content="https://little.cloud" />
-    <title>Little Cloud | Host Login</title>
+    <title>a little Redirect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #ffffff;
+            --accent-color: #5599FF;
+            --secondary-color: #374151;
+            --border-color: #1F2937;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://picsum.photos/1920/1080') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="image/favicon/favicon.png" type="image/x-icon" />
+        .site-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
 
-    <!-- Bootstrap , fonts & icons  -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="fonts/sofia-pro/typographie.css" />
-    <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css" />
-    <script src="plugins/lordicon/lord-icon-2.1.0.min.js"></script>
+        .header-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-    <!-- Plugin'stylesheets  -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.css" />
-    <link rel="stylesheet" href="plugins/slick/slick.min.css" />
-    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="plugins/aos/aos.min.css" />
-    <link rel="stylesheet" href="plugins/nice-select/nice-select.min.css" />
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
 
-    <!-- Vendor stylesheets  -->
-    <link rel="stylesheet" href="css/main.css" />
+        .logo img {
+            height: 2rem;
+            width: auto;
+        }
 
-    <!-- you can add your custom stylesheet in this file -->
-  
-    <script src="js/main.js"></script>
-    
+        .logo-text {
+            color: var(--text-color);
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-button {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: opacity 0.2s;
+        }
+
+        .nav-button:hover {
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .title {
+            font-size: clamp(2rem, 8vw, 4rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #fff;
+                    }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: rgba(55, 65, 81, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .card-content {
+            color: #D1D5DB;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #D1D5DB;
+            background-color: rgba(55, 65, 81, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+        }
+
+        .contact-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        .contact-link:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        footer img {
+            height: 20px;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .header-nav {
+                display: none;
+            }
+        }
+    </style>
 </head>
-
-<!-- Body Structure of Page -->
 <body>
-    
-        <div id="header-container"></div>
-         <!-- START site wrapper -->
-<div class="site-wrapper overflow-hidden">
-    <!--\/\/ Leave Header Here \/\/\/-->
-    
-    <!-- ^^^^^^^^^ -->
-    <!-- MAIN CONTENT START-->
-    <div id="hero-section-container"></div>
-    <!-- MAIN CONTENT END-->
-    <!--\/\/ Leave Footer Here \/\/\/-->
-    <div id="footer-container"></div>
-    <!-- ^^^^^^^^^ -->
-</div>
- <!-- END site wrapper -->
- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="https://little.cloud" class="logo">
+                <img src="https://little.cloud/assets/img/logo.svg" alt="Little Cloud logo">
+                <span class="logo-text">Little Cloud</span>
+            </a>
+            <nav class="header-nav">
+                <a href="https://app.little.cloud/submitticket.php?step=2&deptid=6" class="nav-link">Contact Support</a>
+                <a href="https://little.cloud/login" class="nav-button">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Site Not Found</h1>
+            <p class="subtitle">The page you're looking for isn't available right now.</p>
+        </header>
+
+        <div class="contact-info">
+            If you're the site owner, please contact your hosting provider:
+            <a href="[% data.url FILTER html %]" target="_blank" rel="noopener noreferrer" class="contact-link" id="dynamicProviderLink">
+                [% data.name FILTER html %]
+            </a>
+        </div>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2 class="card-title">IP Address Change</h2>
+                <p class="card-content">
+                    The IP address for this domain may have changed recently. DNS changes can take 8-24 hours to propagate. Try clearing your DNS cache to restore access.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">Server Configuration</h2>
+                <p class="card-content">
+                    There might be a server misconfiguration. Verify that your hosting provider has configured the correct IP address in Apache settings and DNS records.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2 class="card-title">Server Migration</h2>
+                <p class="card-content">
+                    The site may have moved to a different server. Check if the domain URL has changed or if your hosting provider has migrated the account.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://little.cloud">
+            <img src="https://little.cloud/assets/img/logo.svg" alt="Little Cloud">
+        </a>
+    </footer>
 </body>
 </html>
